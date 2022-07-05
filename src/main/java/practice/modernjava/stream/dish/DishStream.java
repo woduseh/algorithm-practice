@@ -1,12 +1,12 @@
-package com.modernjava.stream;
+package practice.modernjava.stream.dish;
 
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
 
-import com.modernjava.stream.Dish.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
+import practice.modernjava.stream.dish.Dish.Type;
 
 public class DishStream {
     public void main() {

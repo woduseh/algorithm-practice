@@ -1,4 +1,4 @@
-package com.modernjava.stream;
+package practice.modernjava.stream.primenumber;
 
 import java.util.ArrayList;
 import java.util.Collections;

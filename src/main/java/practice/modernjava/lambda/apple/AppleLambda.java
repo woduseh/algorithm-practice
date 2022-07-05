@@ -1,4 +1,4 @@
-package com.modernjava.lambda;
+package practice.modernjava.lambda.apple;
 
 import static java.util.Comparator.comparing;
 
@@ -9,7 +9,8 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class AppleLambda {
-  public void main() {
+
+  public static void main(String[] args) {
     List<Apple> inventory = new ArrayList<>();
     inventory.add(new Apple(200, "Green"));
     inventory.add(new Apple(150, "Red"));

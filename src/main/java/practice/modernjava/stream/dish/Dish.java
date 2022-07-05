@@ -1,4 +1,4 @@
-package com.modernjava.stream;
+package practice.modernjava.stream.dish;
 
 public record Dish(String name, boolean vegetarian, int calories,
                    Dish.Type type) {

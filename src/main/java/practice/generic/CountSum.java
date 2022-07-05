@@ -1,4 +1,4 @@
-package com.modernjava.stream;
+package practice.generic;
 
 import java.util.stream.LongStream;
 

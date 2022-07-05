@@ -1,4 +1,4 @@
-package com.modernjava.stream;
+package practice.modernjava.stream.trader;
 
 public record Transaction(Trader trader, int year, int value) {
 

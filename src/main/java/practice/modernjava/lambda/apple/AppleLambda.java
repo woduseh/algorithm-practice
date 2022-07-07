@@ -14,6 +14,13 @@ public class AppleLambda {
     List<Apple> inventory = new ArrayList<>();
     inventory.add(new Apple(200, "Green"));
     inventory.add(new Apple(150, "Red"));
+    var blackApple = new Apple(100, "Black");
+    // add blackapple to inventory
+    inventory.add(blackApple);
+    // make blueapple that is very heavy and blue color
+    var blueApple = new Apple(300, "Blue");
+    // add blueapple to inventory
+    inventory.add(blueApple);
 
     // 1단계 : 코드 전달
     prettyPrintApple(inventory, new AppleWeightFormatter());

@@ -3,7 +3,7 @@ package practice.modernjava.stream.spliterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class WordCounterSpliterator implements Spliterator<Character> {
+public final class WordCounterSpliterator implements Spliterator<Character> {
 
     private final String string;
     private int currentChar;

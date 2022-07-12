@@ -1,4 +1,4 @@
-package practice.modernjava.reactive.flow;
+package practice.modernjava.reactive.cell;
 
 public class ArithmeticCell extends SimpleCell {
 

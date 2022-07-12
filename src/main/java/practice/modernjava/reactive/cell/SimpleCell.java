@@ -1,4 +1,4 @@
-package practice.modernjava.reactive.flow;
+package practice.modernjava.reactive.cell;
 
 import java.util.ArrayList;
 import java.util.List;

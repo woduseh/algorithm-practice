@@ -2,17 +2,17 @@ package practice.modernjava.functional;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Subsets {
 
     public static void main(String[] args) {
         var list = subsets(List.of(1, 2, 3));
-
-        list.sort(Comparator.comparing(List::toString));
-        list.sort(Comparator.comparing(List::size));
+        var list2 = subsets(List.of(1, 2, 3));
         System.out.println(list);
+        System.out.println(list2);
+
+        System.out.println("Is list and list2 is equal: " + list.equals(list2));
     }
 
     static List<List<Integer>> subsets(List<Integer> list) {

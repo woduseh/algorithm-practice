@@ -5,7 +5,7 @@ import java.util.function.UnaryOperator;
 
 public class Repeat {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(repeat(2, (Integer x) -> x * x).apply(2));
     }
 

@@ -15,7 +15,7 @@ public class Subsets {
         System.out.println("Is list and list2 is equal: " + list.equals(list2));
     }
 
-    static List<List<Integer>> subsets(List<Integer> list) {
+    public static List<List<Integer>> subsets(List<Integer> list) {
         if (list.isEmpty()) {
             List<List<Integer>> ans = new ArrayList<>();
             ans.add(Collections.emptyList());

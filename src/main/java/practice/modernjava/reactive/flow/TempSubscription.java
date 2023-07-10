@@ -1,9 +1,13 @@
 package practice.modernjava.reactive.flow;
 
+import static practice.modernjava.reactive.flow.model.TempInfo.fetch;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Flow.Subscriber;
 import java.util.concurrent.Flow.Subscription;
+
+import practice.modernjava.reactive.flow.model.TempInfo;
 
 public class TempSubscription implements Subscription {
 
@@ -22,7 +26,7 @@ public class TempSubscription implements Subscription {
         executor.submit(() -> {
             for (long i = 0L; i < n; i++) {
                 try {
-                    subscriber.onNext(TempInfo.fetch(town));
+                    subscriber.onNext(fetch(town));
                 } catch (Exception e) {
                     subscriber.onError(e);
                     break;

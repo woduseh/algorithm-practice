@@ -24,7 +24,7 @@ public class Main {
 
         long invocationTime = System.currentTimeMillis();
 
-//        shop.findPrices("myProduct", shops);
+        shop.findPrices("myProduct", shops);
 
         CompletableFuture[] futures = shop.findPricesStream("myProduct", shops)
                 .map(future -> future.thenAccept(s -> System.out.println(
@@ -34,7 +34,7 @@ public class Main {
 
         long retrievalTime = System.currentTimeMillis();
         System.out.println(
-                "All shops  have now responses in: " + (retrievalTime - invocationTime) + "ms");
+                "All shops have now responses in: " + (retrievalTime - invocationTime) + "ms");
     }
 
 }

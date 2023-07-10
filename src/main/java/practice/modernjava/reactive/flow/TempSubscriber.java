@@ -3,6 +3,8 @@ package practice.modernjava.reactive.flow;
 import java.util.concurrent.Flow.Subscriber;
 import java.util.concurrent.Flow.Subscription;
 
+import practice.modernjava.reactive.flow.model.TempInfo;
+
 public class TempSubscriber implements Subscriber<TempInfo> {
 
     private Subscription subscription;

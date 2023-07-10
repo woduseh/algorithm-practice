@@ -12,16 +12,16 @@ public class Main {
 
         update("A", 10, t);
         functionalUpdate("A", 10, t);
-        System.out.println(patternMatching(t));
+        // System.out.println(patternMatching(t));
 
         System.out.println(t);
     }
 
-    private static String patternMatching(Object obj) {
-        return switch (obj) {
-            case Integer i -> i + ": It is an integer";
-            case String s -> s + ": It is a string";
-            default -> "It is none of the known data types";
-        };
-    }
+    // private static String patternMatching(Object obj) {
+    //     return switch (obj) {
+    //         case Integer i -> i + ": It is an integer";
+    //         case String s -> s + ": It is a string";
+    //         default -> "It is none of the known data types";
+    //     };
+    // }
 }

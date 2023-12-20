@@ -10,7 +10,6 @@ public class HashcodeTest {
 
 	public static void main(String[] args) throws Exception {
 
-
 		Apple1 apple1 = Apple1.builder()
 			.color(RED)
 			.weight(HUNDRED)
@@ -24,18 +23,18 @@ public class HashcodeTest {
 			.build();
 
 		// Lombok의 .hashcode() 는 값만을 가지고 비교하므로 동일하다
-		System.out.println(apple1.hashCode() == apple2.hashCode());
+		// System.out.println(apple1.hashCode() == apple2.hashCode());
 
 		// 두 객체는 equal 이므로 해시코드도 일치한다
-		System.out.println(apple1.hashCode() == Apple1.builder()
-				.color(RED)
-				.weight(HUNDRED)
-				.harvestDay(NOW)
-				.build()
-			.hashCode());
+		// System.out.println(apple1.hashCode() == Apple1.builder()
+		// 		.color(RED)
+		// 		.weight(HUNDRED)
+		// 		.harvestDay(NOW)
+		// 		.build()
+		// 	.hashCode());
 
 		// Lombok의 .equals()는 클래스가 같은지도 비교하므로 동일하지 않다
-		System.out.println(apple1.equals(apple2));
+		// System.out.println(apple1.equals(apple2));
 
 		HashMap<? super AppleParent, String> appleParentHashMap = new HashMap<>();
 
@@ -50,13 +49,14 @@ public class HashcodeTest {
 		appleParentHashMap.put(apple2, "Apple2");
 
 		// 서로 같은 해시코드를 반환하는데 어떻게 이를 구분할 수 있는가?
+		// 답: HashMap.getNode() 에서는 equals를 이용해서 처리하고 있어서?
 		System.out.println(appleParentHashMap.get(apple1));
 
-		System.out.println(appleParentHashMap.get(Apple1.builder()
-			.color(RED)
-			.weight(HUNDRED)
-			.harvestDay(NOW)
-			.build()));
+		// System.out.println(appleParentHashMap.get(Apple1.builder()
+		// 	.color(RED)
+		// 	.weight(HUNDRED)
+		// 	.harvestDay(NOW)
+		// 	.build()));
 
 		System.out.println(appleParentHashMap.get(apple2));
 
